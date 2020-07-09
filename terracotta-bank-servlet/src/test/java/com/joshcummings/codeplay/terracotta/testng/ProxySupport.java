@@ -34,7 +34,7 @@ public class ProxySupport {
 		        .withServerResolver((host, port) -> {
 						if ( host.equals(TestConstants.host) ||
 								host.equals(TestConstants.evilHost)) {
-							return new InetSocketAddress("docker".equals(type) ? "192.168.99.100" : "localhost", 8080);
+							return new InetSocketAddress("docker".equals(type) ? "192.168.99.100" : "localhost", 8000);
 						}
 						return new InetSocketAddress(host, port);
 					})

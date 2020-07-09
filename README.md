@@ -2,7 +2,7 @@
 
 Terracotta Bank is an intentionally-vulernable web application, useful for practicing detection, exploitation, and mitigation of common web application security vulnerabilities.
 
-Terrcotta Bank binds locally to port 8080 by default, and while it is running, the machine on which it is running is vulnerable in the same way that this application is.
+Terrcotta Bank binds locally to port 8000 by default, and while it is running, the machine on which it is running is vulnerable in the same way that this application is.
 
 ## Getting Started
 
@@ -14,7 +14,7 @@ To run Terracotta Bank, simply clone the repo and then run:
 ./gradlew bootRun
 ```
 
-And browse to `localhost:8080` to begin looking for vulnerabilities.
+And browse to `localhost:8000` to begin looking for vulnerabilities.
 
 ## Usage
 

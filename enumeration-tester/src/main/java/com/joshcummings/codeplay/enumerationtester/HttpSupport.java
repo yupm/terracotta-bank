@@ -42,7 +42,7 @@ public class HttpSupport {
 	protected final String host;
 
 	public HttpSupport() {
-		this("localhost:8080");
+		this("localhost:8000");
 	}
 
 	public HttpSupport(String host) {

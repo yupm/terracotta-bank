@@ -45,7 +45,7 @@ public class HttpSupport {
 	}
 
 	public HttpSupport(String host) {
-		this.host = host == null ? "localhost:8080" : host;
+		this.host = host == null ? "localhost:8000" : host;
 
 		if ( this.host.startsWith("localhost") ) {
 			config = RequestConfig.custom().build();

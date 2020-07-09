@@ -41,7 +41,7 @@ public class DockerSupport {
 
 	public void startContainer() throws Exception {
 		CreateContainerCmd cmd = docker.createContainerCmd("terracotta-bank");
-		cmd.withPortBindings(PortBinding.parse("8080:8080"))
+		cmd.withPortBindings(PortBinding.parse("8000:8000"))
 			.withNetworkMode("host")
 			.withName(CONTAINER_NAME);
 		cmd.exec();

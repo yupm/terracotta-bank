@@ -55,7 +55,7 @@ public class EnumerationTesterApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		http = new HttpSupport(args.length == 1 ? args[0] : "localhost:8080", false);
+		http = new HttpSupport(args.length == 1 ? args[0] : "localhost:8000", false);
 
 		// our control value
 		test(UUID.randomUUID().toString());
